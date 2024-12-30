@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afroshop</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Warenkorb</h1>
+            <nav>
+                <ul>
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="produkte.html">Produkte</a></li>
+                    <li><a href="warenkorb.html" id="cart-icon"><i class="fa-solid fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                    <li><a href="bestellungen.html">Bestellungen</a></li>
+                    <li><a href="#">Über uns</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="cart" id="cart-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bild</th>
+                        <th>Produkt</th>
+                        <th>Preis</th>
+                        <th>Menge</th>
+                        <th>Gesamt</th>
+                        <th>Entfernen</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Warenkorb-Artikel hier -->
+                </tbody>
+            </table>
+            <p id="total-price">Gesamtpreis: €0</p>
+            <button onclick="checkout()">Zur Kasse</button>
+            <button onclick="continueShopping()">Weiter einkaufen</button>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Afroshop. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
